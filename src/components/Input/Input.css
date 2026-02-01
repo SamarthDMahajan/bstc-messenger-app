@@ -1,0 +1,58 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: sans-serif;
+  max-width: 300px;
+}
+
+.input-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-field {
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* Variants */
+.variant-outlined {
+  border: 1px solid #ccc;
+  background: white;
+}
+.variant-outlined:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.1);
+}
+
+.variant-filled {
+  border: 1px solid transparent;
+  background: #f0f2f5;
+}
+.variant-filled:focus {
+  background: white;
+  border-color: #007bff;
+}
+
+/* States */
+.has-error {
+  border-color: #dc3545;
+}
+.has-error:focus {
+  box-shadow: 0 0 0 2px rgba(220,53,69,0.1);
+}
+
+.input-message {
+  font-size: 12px;
+}
+.input-message.error { color: #dc3545; }
+.input-message.helper { color: #6c757d; }
+
+.input-wrapper.disabled {
+  opacity: 0.6;
+}

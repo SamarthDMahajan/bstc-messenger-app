@@ -1,0 +1,33 @@
+[00:48:01.842] [INFO] storybook v10.2.1
+[00:48:02.960] [DEBUG] Getting package.json info for C:/Users/Samarth Mahajan/Desktop/internship/messenger-app-frontend-setup (1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/package.json...
+[00:48:05.984] [DEBUG] Serving static files from [36mnode_modules/@chromatic-com/storybook/assets[39m at [36m/addon-visual-tests-assets[39m
+[00:48:05.985] [INFO] Starting...
+[00:48:06.690] [DEBUG] Starting preview..
+[00:48:06.704] [WARN] 🚨 Unable to index ./src/ui-library/LoginForm.stories.tsx:
+  NoMetaError: CSF: missing default export C:/Users/Samarth Mahajan/Desktop/internship/messenger-app-frontend-setup (1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/src/ui-library/LoginForm.stories.tsx (line 1, col 0)
+
+More info: https://storybook.js.org/docs/writing-stories?ref=error#default-export
+    at CsfFile.parse (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/_node-chunks/chunk-J3J4PSPT.js:455:13)
+    at Object.createIndex (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/core-server/presets/common-preset.js:1787:81)
+    at async _StoryIndexGenerator.extractStories (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/core-server/index.js:5909:23)
+    at async file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/core-server/index.js:5830:39
+    at async Promise.all (index 9)
+    at async Promise.all (index 0)
+    at async _StoryIndexGenerator.updateExtracted (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/core-server/index.js:5818:5)
+    at async _StoryIndexGenerator.ensureExtracted (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/core-server/index.js:5853:5)
+    at async _StoryIndexGenerator.initialize (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/core-server/index.js:5814:5)
+    at async file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/core-server/presets/common-preset.js:1827:10
+[00:48:06.722] [ERROR] Failed to build the preview
+[00:48:06.724] [ERROR] Error: Unable to index ./src/ui-library/LoginForm.stories.tsx
+    at _StoryIndexGenerator.getIndexAndStats (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/core-server/index.js:6082:15)
+    at async _StoryIndexGenerator.getIndex (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/core-server/index.js:6071:13)
+    at async getOptimizeDeps (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/@storybook/builder-vite/dist/index.js:1845:15)
+    at async createViteServer (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/@storybook/builder-vite/dist/index.js:1871:19)
+    at async Module.start (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/@storybook/builder-vite/dist/index.js:1906:17)
+    at async storybookDevServer (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/core-server/index.js:7207:83)
+    at async buildOrThrow (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/core-server/index.js:4504:12)
+    at async buildDevStandalone (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/core-server/index.js:7577:66)
+    at async withTelemetry (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/_node-chunks/chunk-KNMEGL7N.js:218:12)
+    at async dev (file:///C:/Users/Samarth%20Mahajan/Desktop/internship/messenger-app-frontend-setup%20(1)/bstc-messenger-app-bstc-messenger-app-frontend-setup/node_modules/storybook/dist/bin/core.js:2734:3)
+[00:48:06.731] [WARN] Broken build, fix the error above.
+You may need to refresh the browser.
