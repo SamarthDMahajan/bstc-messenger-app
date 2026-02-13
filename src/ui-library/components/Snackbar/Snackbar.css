@@ -1,0 +1,69 @@
+/* Container handles positioning */
+.snackbar-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 2000; /* High z-index to sit on top of modals */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  pointer-events: none; /* Let clicks pass through if not hitting the box */
+}
+
+/* The actual box */
+.snackbar-content {
+  pointer-events: auto;
+  min-width: 280px;
+  max-width: 400px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #fff;
+  
+  /* Animation setup */
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
+}
+
+/* Animation Trigger */
+.snackbar-container.show .snackbar-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Variants */
+.snackbar-default { background-color: #323232; }
+.snackbar-success { background-color: #2e7d32; } /* MUI Green */
+.snackbar-error   { background-color: #d32f2f; } /* MUI Red */
+.snackbar-warning { background-color: #ed6c02; } /* MUI Orange */
+.snackbar-info    { background-color: #0288d1; } /* MUI Blue */
+
+.snackbar-message {
+  flex-grow: 1;
+  margin: 0 12px;
+}
+
+.snackbar-close-btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.7;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.snackbar-close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 1;
+}
